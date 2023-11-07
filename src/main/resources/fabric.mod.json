@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "uroboros",
+  "version": "${version}",
+  "name": "Uroboros",
+  "description": "",
+  "authors": ["Camii07"],
+  "contact": {
+    "repo": "https://github.com/Camii07/Ouroboros"
+  },
+  "license": "MIT",
+  "icon": "assets/uroboros/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.camii.uroboros.client.UroborosClient"
+    ],
+    "main": [
+      "me.camii.uroboros.Uroboros"
+    ]
+  },
+  "mixins": [
+    "uroboros.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
